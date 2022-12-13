@@ -33,7 +33,6 @@ export function CastList(props) {
             return cast
         }
     }).map((cast) => {return cast})
-    console.log(displayCharacters);
 
     return (
         <>

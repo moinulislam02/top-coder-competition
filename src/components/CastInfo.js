@@ -10,7 +10,6 @@ export function CastInfo(props) {
     const [CastInfo, setCastInfo] = useState({})
     const {id} = useParams()
     const [episodeNames, setepisodeNames] = useState([])
-
     const getCastInfo = () =>{
         getCast(id).then((res)=>{
             setCastInfo(res)
@@ -21,23 +20,24 @@ export function CastInfo(props) {
         getCastInfo()
     }, [id])
 
-    const searchEpisode = async (url) =>{
-        try {
-            const res = await axios.get(url);
-            return res.data.name
-        } catch (error) {
+    // const searchEpisode = async (url) =>{
+    //     try {
+    //         const res = await axios.get(url);
+    //         return res.data.name
+    //     } catch (error) {
             
-        }
-    }
+    //     }
+    // }
 
-    const episodeName =  CastInfo?.episode?.map((epi) => {
-        searchEpisode(epi).then((res)=>{
-            setepisodeNames(res)
-            return res
-        })
-    })
+    // const episodeName = ()=>{  
+    //     CastInfo?.episode?.map((epi) => {
+    //         searchEpisode(epi).then((res)=>{
+    //             const updateEpisode = [...episodeNames, res]
+    //             setepisodeNames(updateEpisode)
+    //         })
+    //     })
+    // }
     
-    // console.log(episodeNames);
 
     return (
         <div class="cast-details">
@@ -164,9 +164,9 @@ export function CastInfo(props) {
                                     </svg>                                                                              
                                     <p>Episodes</p> 
                                     <ul>
-                                        {episodeName?.map(epi=>(
+                                        {/* {CastInfo?.episode?.map(epi=>(
                                             <li>{epi}</li>
-                                        ))}
+                                        ))} */}
                                     </ul>                                  
                                 </div>
                             </div>

@@ -554,3 +554,21 @@ header .logo img {}
 .pagination .pagination-inner .right-arrow svg {}
 
 .pagination .pagination-inner .left-arrow svg {}
+
+.characters .slick-slider {}
+
+.characters .slick-slider .slick-arrow {}
+
+.characters .slick-slider .slick-next:before, .slick-prev:before {
+    opacity: 1;
+    font-size: 36px;
+}
+
+.characters .slick-slider .slick-next {
+    right: -7px;
+}
+
+.characters .slick-slider .slick-prev {
+    left: -13px;
+    z-index: 1;
+}

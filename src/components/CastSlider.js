@@ -17,30 +17,48 @@ export function CastSlider() {
         initialSlide: 0,
         arrows:true,
         responsive: [
-        //   {
-        //     breakpoint: 1024,
-        //     settings: {
-        //       slidesToShow: 3,
-        //       slidesToScroll: 3,
-        //       infinite: true,
-        //       dots: true
-        //     }
-        //   },
-        //   {
-        //     breakpoint: 600,
-        //     settings: {
-        //       slidesToShow: 2,
-        //       slidesToScroll: 2,
-        //       initialSlide: 2
-        //     }
-        //   },
-        //   {
-        //     breakpoint: 480,
-        //     settings: {
-        //       slidesToShow: 1,
-        //       slidesToScroll: 1
-        //     }
-        //   }
+          {
+            breakpoint: 1700,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: false
+            }
+          },
+          {
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: false
+            }
+          },
+          {
+            breakpoint: 1078,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 765,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
         ]
     };
 
